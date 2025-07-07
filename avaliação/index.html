@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByU Bees</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+                :root {
+            --bs-amber-700: #d97706; 
+            --bs-amber-900: #78350f; 
+        }
+
+        .nav-link.custom-amber {
+            color: var(--bs-amber-700);
+            font-weight: 600;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link.custom-amber:hover {
+            color: var(--bs-amber-500); 
+        }
+
+        .nav-link.custom-amber.active {
+            background-color: rgba(234, 170, 96, 0.94); 
+            color: var(--bs-amber-500); 
+            border-radius: 0.25rem; 
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; 
+        }
+        nav {
+            @apply flex justify-between items-center py-4 px-6 bg-white shadow-md rounded-b-lg;
+        }
+        nav span {
+            @apply text-2xl font-bold text-amber-800;
+        }
+        nav ul {
+            @apply flex space-x-6;
+        }
+        nav ul li a {
+            @apply text-gray-700 hover:text-amber-600 transition-colors duration-300;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 621px;
+            object-fit: cover; 
+            border-radius: 0.5rem; 
+        }
+        .container.marketing .col-lg-4 img,
+        .featurette-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .featurette-image {
+            height: 500px; 
+        }
+        .bd-placeholder-img {
+            background-color: var(--bs-secondary-color); 
+        }
+        .section-novidades {
+            @apply text-center py-16 bg-amber-50 rounded-lg shadow-inner mt-8;
+        }
+        .section-novidades span {
+            @apply text-sm font-semibold text-amber-600 uppercase tracking-wider;
+        }
+        .section-novidades h1 {
+            @apply text-4xl font-extrabold text-gray-800 mt-2 mb-4;
+        }
+        .section-novidades hr {
+            @apply w-24 h-1 bg-amber-500 mx-auto my-4 rounded-full;
+        }
+        .section-novidades h2 {
+            @apply text-xl text-gray-600 leading-relaxed;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="py-2 bg-body-tertiary border-bottom"> 
+            <div class="container d-flex flex-wrap"> 
+                <ul class="nav me-auto">
+                    <li class="nav-item"><a href="#" class="nav-link custom-amber px-5">ByU Bees</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link custom-amber px-2" aria-current="page">Menu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link custom-amber px-2">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link custom-amber px-2">Fale conosco</a></li>
+                </ul>
+                <scan>
+                    <a href="https://www.instagram.com/annecarolbb/" class="text-amber-700 hover:text-amber-900 font-semibold">Instagram</a>
+                </scan>
+            </div> 
+        </nav>
+    <main>
+        <!-- Carrossel -->
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- Imagem para o slide 1 do carrossel -->
+                    <img src="Captura de tela 2025-07-05 200622.png" alt="apiário no minecraft manhã" onerror="this.onerror=null;this.src='https://placehold.co/1200x500/A0522D/FFFFFF?text=Erro+Carrossel+1';">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1 class="text-white text-4xl font-bold">Manhã produtiva</h1>
+                            <p class="opacity-75 text-white">Logo ao amanhecer, as ProsperiBees já começam a trabalhar e produzir as ProsperiCombs.</p>
+                            <p><a class="btn btn-lg btn-primary bg-amber-500 hover:bg-amber-300 border-amber-500" href="#">Veja agora</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- Imagem para o slide 2 do carrossel -->
+                    <img src="Captura de tela 2025-07-05 200511.png" alt="apiário no minecraft tarde" onerror="this.onerror=null;this.src='https://placehold.co/1200x500/8B4513/FFFFFF?text=Erro+Carrossel+2';">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 class="text-white text-4xl font-bold">No entardecer</h1>
+                            <p class="opacity-75 text-white">Quando chega a tarde, as ProsperiCombs já estão na centrífuga, se transformando em shards.</p>
+                            <p><a class="btn btn-lg btn-primary bg-amber-500 hover:bg-amber-300 border-amber-500" href="#">Saiba Mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- Imagem para o slide 3 do carrossel -->
+                    <img src="Captura de tela 2025-07-05 200317.png" alt="apiário no minecraft noite" onerror="this.onerror=null;this.src='https://placehold.co/1200x500/D2691E/FFFFFF?text=Erro+Carrossel+3';">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1 class="text-white text-4xl font-bold">Noite de descanso</h1>
+                            <p class="opacity-75 text-white">Pela noite, as abelhinhas se recolhem nas colmeias e descansam a espera do próximo dia de produtividade</p>
+                            <p><a class="btn btn-lg btn-primary bg-amber-500 hover:bg-amber-300 border-amber-500" href="#">Visite a Galeria</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Três colunas de texto abaixo do carrossel -->
+        <div class="container marketing mt-8">
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <!-- Imagem para a primeira coluna -->
+                    <img class="rounded-circle mb-4" src="Captura de tela 2025-07-05 211634.png" alt="Normal Bees" onerror="this.onerror=null;this.src='https://placehold.co/140x140/A0522D/FFFFFF?text=Erro+Gr%C3%A3os';">
+                    <h2 class="fw-normal text-gray-800">Abelhas Vanilla</h2>
+                    <p class="text-gray-700">Visite nossas já conhecidas abelhas amarelinhas, responsáveis pela maior produção dos favos.</p>
+                    <p><a class="btn btn-secondary bg-amber-600 hover:bg-amber-500 border-amber-600 text-white" href="#">Ver Detalhes »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <!-- Imagem para a segunda coluna -->
+                    <img class="rounded-circle mb-4" src="Captura de tela 2025-07-05 211909.png" alt="CrystallineBees" onerror="this.onerror=null;this.src='https://placehold.co/140x140/8B4513/FFFFFF?text=Erro+Barista';">
+                    <h2 class="fw-normal text-gray-800">CrystallineBees</h2>
+                    <p class="text-gray-700">Veja as abelhas base para a criação das ProsperiBees, as divas encontradas no nether.</p>
+                    <p><a class="btn btn-secondary bg-amber-600 hover:bg-amber-500 border-amber-600 text-white" href="#">Ver Detalhes »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <!-- Imagem para a terceira coluna -->
+                    <img class="rounded-circle mb-4" src="Captura de tela 2025-07-06 011836.png" alt="ProsperiBees" onerror="this.onerror=null;this.src='https://placehold.co/140x140/D2691E/FFFFFF?text=Erro+Ambiente';">
+                    <h2 class="fw-normal text-gray-800">ProsperiBees</h2>
+                    <p class="text-gray-700">Conheça as maiores trabalhadoras deste server, as ProsperiBees produzindo arduamente.</p>
+                    <p><a class="btn btn-secondary bg-amber-600 hover:bg-amber-500 border-amber-600 text-white" href="#">Ver Detalhes »</a></p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider my-12 border-amber-200">
+            <br><br> 
+            <div class="row featurette flex items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1 text-gray-800">FARM. <span class="text-amber-600">Surpreenda-se.</span></h2>
+                    <p class="lead text-gray-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita voluptates magni numquam reprehenderit quae sunt cum, ipsum dolores aspernatur corrupti quisquam quidem quaerat iusto unde, beatae tempora facilis quos hic.
+                    Nesciunt esse velit nisi voluptates eaque quos, asperiores dicta pariatur delectus. Dolores soluta, animi quis minus in at? Excepturi debitis blanditiis et sint aliquam earum nam velit veniam numquam assumenda?
+                    Aliquid hic maiores reiciendis unde commodi deleniti molestias beatae cumque accusamus debitis placeat sit quisquam quos et id iure fuga, autem similique ad quam! Velit quam saepe voluptatibus eaque natus.</p>
+                </div>
+                <div class="col-md-5">
+                    <!-- Imagem para a primeira featurette -->
+                    <img class="featurette-image img-fluid mx-auto" src="Captura de tela 2025-07-07 135906.png" alt="FARM 1" onerror="this.onerror=null;this.src='https://placehold.co/500x500/A0522D/FFFFFF?text=Erro+Receita+1';">
+                </div>
+            </div>
+
+            <hr class="featurette-divider my-12 border-amber-200">
+
+            <div class="row featurette flex items-center">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1 text-gray-800">FARM. <span class="text-amber-600">Prove e Comprove.</span></h2>
+                    <p class="lead text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, qui veniam. Numquam, quae soluta ipsam officiis architecto earum commodi cupiditate omnis, iste est itaque nihil veritatis labore eius sint vitae.
+                    Consequuntur at sunt, illo tempora similique fuga quo ducimus vero iusto ex voluptates distinctio eligendi aliquid, cupiditate, libero cumque. Deserunt nihil alias officia numquam rem dolorem ipsa sequi cumque nam.
+                    Ipsam voluptates, reiciendis dolores provident iste at. Eum, in soluta. Laborum aspernatur nihil sapiente iste officiis eaque maxime beatae, tenetur assumenda odio dolorum nesciunt sequi esse fuga, vitae alias perspiciatis!</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <!-- Imagem para a segunda featurette -->
+                    <img class="featurette-image img-fluid mx-auto" src="Captura de tela 2025-07-07 135940.png" alt="FARM 2" onerror="this.onerror=null;this.src='https://placehold.co/500x500/8B4513/FFFFFF?text=Erro+Qualidade';">
+                </div>
+            </div>
+
+            <hr class="featurette-divider my-12 border-amber-200">
+
+            <div class="row featurette flex items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1 text-gray-800">FARM. <span class="text-amber-600">Nosso Compromisso.</span></h2>
+                    <p class="lead text-gray-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore sequi sunt nesciunt cumque, vero distinctio sapiente autem, alias sed aspernatur magnam voluptatibus voluptas, exercitationem blanditiis eos velit dolores reiciendis nihil?
+                    Minus, nisi nostrum nam explicabo ratione saepe? Illo laboriosam in soluta dolorum perspiciatis eligendi, iusto vitae aliquid repellendus quas at sapiente facere eos. Libero hic facere assumenda eligendi quaerat doloremque!
+                    Totam aut natus ea sequi dolor omnis qui necessitatibus, quam eos vero, ex corrupti ipsam doloribus reiciendis fugit dignissimos. Quam, dolorum magni harum dolores facere molestias voluptates nostrum quidem excepturi!</p>
+                </div>
+                <div class="col-md-5">
+                    <!-- Imagem para a terceira featurette -->
+                    <img class="featurette-image img-fluid mx-auto" src="Captura de tela 2025-07-07 135956.png" alt="FARM 3" onerror="this.onerror=null;this.src='https://placehold.co/500x500/D2691E/FFFFFF?text=Erro+Sustentabilidade';">
+                </div>
+            </div>
+
+            <hr class="featurette-divider my-12 border-amber-200">
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="container mt-8 py-4 border-t border-gray-200">
+            <p class="float-end">
+                <a href="#" class="text-amber-700 hover:text-amber-900">Voltar ao topo</a>
+            </p>
+            <p class="text-gray-600">© 2023–2025 ByU Bees, Inc.
+                <a href="#" class="text-amber-700 hover:text-amber-900 ml-4">Privacidade</a>
+                <a href="#" class="text-amber-700 hover:text-amber-900 ml-4">Termos</a>
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
